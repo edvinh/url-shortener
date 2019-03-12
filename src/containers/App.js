@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import styled from 'styled-components'
-import { Typography, Snackbar } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 
 import URLInput from '../components/URLInput'
 import LinkContainer from '../components/LinkContainer'
@@ -68,7 +68,7 @@ class App extends Component {
     // The new URL
     const url = { original: input, shortened }
 
-    // Update URLS state
+    // Update URLs state
     const urls = [url, ...this.state.urls].slice(0, 10)
 
     this.setState({

@@ -33,11 +33,6 @@ export function getURLs () {
  */
 export function addURL (url) {
   const urls = getURLs()
-  const updatedURLs = [url, ...urls]
-
-  if (updatedURLs.length > 10) {
-    updatedURLs.splice(10)
-  }
-
+  const updatedURLs = [url, ...urls].slice(0, 10)
   localStorage.setItem(URLS_KEY, JSON.stringify(updatedURLs))
 }

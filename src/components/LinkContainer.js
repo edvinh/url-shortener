@@ -10,14 +10,14 @@ const StyledCard = styled(Paper)`
 
 const LinkContainer = ({ original, shortened, ...rest }) => (
   <StyledCard elevation={4} {...rest}>
+    <Typography color="primary" variant="h5">
+      {shortened}
+    </Typography>
+    <br />
     <Typography color="textSecondary" variant="subheading">
       Original Link
     </Typography>
     <Typography variant="subtitle1">{original}</Typography>
-    <br />
-    <Typography color="primary" variant="h5">
-      {shortened}
-    </Typography>
   </StyledCard>
 )
 
