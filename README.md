@@ -15,6 +15,8 @@ yarn
 yarn start
 ```
 
+Navigate to `http://localhost:3000` if the browser doesn't launch the website automatically.
+
 ## Libraries used
 
 - create-react-app
